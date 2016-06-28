@@ -1,0 +1,29 @@
+[user]
+        name = Dillon Hicks
+[color]
+        ui = auto
+[core]
+        excludesfile = /home/dillon/.gitignore_global
+        whitespace = -trailing-space
+        pager = less -FMRiX
+        editor = emacs -nw
+[push]
+        default = simple
+[alias]
+        dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+        st = status
+        ci = commit
+        co = checkout
+        br = branch
+        ar = archive
+        rb = rebase
+        up = pull
+        llog = log --oneline @{upstream}..HEAD
+        llp = log -p @{upstream}..HEAD
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[rerere]
+        enabled = true
+[rebase]
+        autosquash = true
+[apply]
+        whitespace = nowarn

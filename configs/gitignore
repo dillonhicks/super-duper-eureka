@@ -1,0 +1,7 @@
+*.pyc
+*~
+venv/
+py3env/
+logs/
+.DS_Store
+.sass-cache/
